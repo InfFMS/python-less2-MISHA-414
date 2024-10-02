@@ -1,16 +1,9 @@
-# This is a sample Python script.
+n=int(input())
+time_star=8*60+30+55*(n-1)
+hour_star=time_star//60
+min_star=time_star%60
+time=time_star+45
+hour_fin=time//60
+min_fin=time%60
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(f'Время начала урока - {hour_star}:{min_star}, Время конца - {hour_fin}:{min_fin}')
